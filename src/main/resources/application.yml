@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/posx_agent?useSSL=false&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+  cloud:
+    nacos:
+      discovery:
+        namespace: stg3
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        group: stg3
+      config:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: stg3
+        group: stg3
+        file-extension: yaml
+  application:
+    name: nacos_demo
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+logging:
+  level:
+    com.sharding: debug
