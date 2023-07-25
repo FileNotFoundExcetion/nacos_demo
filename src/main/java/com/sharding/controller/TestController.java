@@ -16,12 +16,6 @@ public class TestController {
 
     @PostMapping("hello")
     public Object ss(HttpSession httpSession, HttpServletRequest request) throws IOException {
-//        String parameter = request.getParameter("p");
-//        Map<String, String[]> parameterMap = request.getParameterMap();
-//        ServletInputStream inputStream = request.getInputStream();
-//        System.out.println(IoUtil.read(inputStream, Charset.defaultCharset()));
-//        System.out.println(parameterMap);
-//        System.out.println(parameter);
         System.out.println("--------------");
         System.out.println(shengTengProperties.getPtid());
         System.out.println("--------------");
