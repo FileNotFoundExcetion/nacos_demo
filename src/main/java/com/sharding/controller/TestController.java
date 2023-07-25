@@ -13,6 +13,7 @@ import java.io.IOException;
 public class TestController {
     @Resource
     private ShengTengProperties shengTengProperties;
+
     @PostMapping("hello")
     public Object ss(HttpSession httpSession, HttpServletRequest request) throws IOException {
 //        String parameter = request.getParameter("p");
