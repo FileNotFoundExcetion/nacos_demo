@@ -19,6 +19,8 @@ spring:
         namespace: stg3
         group: stg3
         file-extension: yaml
+    refresh:
+      enabled: true
   application:
     name: nacos_demo
 
@@ -27,3 +29,4 @@ mybatis:
 logging:
   level:
     com.sharding: debug
+
