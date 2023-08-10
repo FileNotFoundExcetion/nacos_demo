@@ -11,7 +11,6 @@ import java.util.Date;
 
 @Data
 public class TAgentShardingRuleConfigDO implements Serializable {
-
     /**
      * 列名: id
      * 备注: 主键
