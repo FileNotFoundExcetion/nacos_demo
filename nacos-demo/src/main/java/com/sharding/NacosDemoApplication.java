@@ -5,16 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-
 @EnableDiscoveryClient
 @MapperScan(basePackages = {"com.sharding.mapper"})
 @SpringBootApplication
-public class TestApplication  {
+public class NacosDemoApplication {
 
-
-
-	public static void main(String[] args) {
-		SpringApplication.run(TestApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(NacosDemoApplication.class, args);
+    }
 
 }

@@ -4,14 +4,9 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://localhost:3306/nacos?useSSL=false&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+  profiles: stg3
   cloud:
     nacos:
-      discovery:
-        namespace: stg3
-        server-addr: 127.0.0.1:8848
-        username: nacos
-        password: nacos
-        group: stg3
       config:
         server-addr: 127.0.0.1:8848
         username: nacos
@@ -19,14 +14,15 @@ spring:
         namespace: stg3
         group: stg3
         file-extension: yaml
-    refresh:
-      enabled: true
-  application:
-    name: nacos_demo
+#        extension-configs:
+#          - dataId: dynamic-routes.yaml
+#            group: stg3
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        namespace: stg3
+        group: stg3
 
-mybatis:
-  mapper-locations: classpath*:/mapper/*.xml
-logging:
-  level:
-    com.sharding: debug
-
+server:
+  port: 9092

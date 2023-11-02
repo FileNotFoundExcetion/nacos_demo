@@ -1,6 +1,5 @@
 package com.sharding.controller;
 
-import com.sharding.service.TestService;
 import com.sharding.service.TestService001;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,9 +17,7 @@ public class TestController {
 
     @PostMapping("hello")
     public Object ss(@RequestParam String type) throws IOException {
-        TestService testService = testService001.map.get(Integer.valueOf(type));
-        System.out.println(testService);
-        return testService;
+        return "hello world";
     }
 
 }
