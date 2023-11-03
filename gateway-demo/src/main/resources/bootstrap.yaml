@@ -17,10 +17,10 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      defaultFilters:
-        - StripPrefix=1
-      routes:
-        - id: nacos-demo
-          uri: lb://nacos-demo
-          predicates:
-            - Path=/nacos-demo/**
+#      defaultFilters:
+#        - StripPrefix=1
+#      routes:
+#        - id: nacos-demo
+#          uri: lb://nacos-demo
+#          predicates:
+#            - Path=/nacos-demo/**
